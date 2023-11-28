@@ -97,7 +97,7 @@ cc_defaults {
 
 cc_binary {
     name: "android.hardware.camera.provider@2.5-service.samsung",
-    defaults: ["camera_service_2_5_defaults"],
+    defaults: ["camera_service_2_5_defaults.samsung"],
     compile_multilib: "32",
     init_rc: ["android.hardware.camera.provider@2.5-service.samsung.rc"],
 }
