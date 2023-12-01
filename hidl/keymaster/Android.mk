@@ -34,7 +34,7 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils
 
-LOCAL_SHARED_LIBRARIES += \
+LOCAL_REQUIRED_MODULES += \
     $(TARGET_KEYMASTER_ADDITIONAL_SHARED_LIBS)
 
 LOCAL_MODULE := android.hardware.keymaster@4.0-service.samsung
