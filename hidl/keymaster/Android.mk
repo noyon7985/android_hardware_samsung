@@ -35,7 +35,7 @@ LOCAL_SHARED_LIBRARIES := \
     libutils
 
 LOCAL_REQUIRED_MODULES := \
-    libcrypto-samsung_ext
+    libcrypto-samsung
 
 LOCAL_MODULE := android.hardware.keymaster@4.0-service.samsung
 LOCAL_INIT_RC := android.hardware.keymaster@4.0-service.samsung.rc
