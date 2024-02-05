@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+#define LOG_TAG "hwcVsyncThread"
+
 #include "hwcomposer.h"
 #include "hwcomposer_vsync.h"
 
@@ -25,7 +27,7 @@
 
 /*****************************************************************************/
 
-#define HWC_VSYNC_THREAD_NAME "hwcVsyncThread"
+#define HWC_VSYNC_THREAD_NAME LOG_TAG
 
 #define VSYNC_TIME_PATH "/sys/devices/platform/samsung-pd.2/s3cfb.0/vsync_time"
 
