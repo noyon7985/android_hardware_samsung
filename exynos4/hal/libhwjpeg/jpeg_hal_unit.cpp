@@ -16,6 +16,8 @@
 
 #define LOG_TAG "libhwjpeg"
 
+#pragma clang diagnostic ignored "-Wunused-function"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -31,7 +33,7 @@
 #include <math.h>
 #include <sys/poll.h>
 
-#include <cutils/log.h>
+#include <log/log.h>
 
 #include "jpeg_hal.h"
 
