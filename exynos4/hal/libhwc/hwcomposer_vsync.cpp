@@ -41,6 +41,10 @@ static void *hwc_vsync_thread(void *data)
 
     // open the file descriptor for the vsync timestamp
     ctx->vsync_timestamp_fd = open(VSYNC_TIME_PATH, O_RDONLY);
+    if (ctx->vsync_timestamp_fd < 0) {
+       ALOGE("Couldn't open vsync sysfs path: %s", strerror(errno));
+       return NULL;
+    }
 
     // set up the thread
     char thread_name[64] = HWC_VSYNC_THREAD_NAME;
